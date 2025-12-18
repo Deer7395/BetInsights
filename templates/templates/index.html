@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>BetInsights</title>
+</head>
+<body>
+    <h1>BetInsights Dashboard</h1>
+
+    <h2>Soccer Matches</h2>
+    <ul>
+        {% for match in soccer %}
+        <li>{{ match.date }}: {{ match.home }} vs {{ match.away }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>NBA Games</h2>
+    <ul>
+        {% for game in nba %}
+        <li>{{ game.date }}: {{ game.home }} vs {{ game.away }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>NFL Games</h2>
+    <ul>
+        {% for game in nfl %}
+        <li>{{ game.date }}: {{ game.home }} vs {{ game.away }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
